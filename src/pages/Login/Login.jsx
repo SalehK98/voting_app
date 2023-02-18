@@ -1,13 +1,17 @@
 import React from "react";
 import LoginCard from "./LoginCard";
 
-function Login({ setScreen }) {
+function Login({ setScreen, setCurrentUser }) {
   const [msgType, setMsgType] = React.useState(true);
 
   return (
     <>
       <h1>Login</h1>
-      <LoginCard setMsgType={setMsgType} setScreen={setScreen} />
+      <LoginCard
+        setMsgType={setMsgType}
+        setScreen={setScreen}
+        setCurrentUser={setCurrentUser}
+      />
       {msgType === true ? (
         <p></p>
       ) : msgType === false ? (

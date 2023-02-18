@@ -23,10 +23,9 @@ function inputHandler(event, userInfo, SetUserInfo, SetValidEmail = false) {
   }
 }
 
-function checkUser(event, userInfo, setMsgType, setScreen) {
+function checkUser(event, userInfo, setMsgType, setScreen, setCurrentUser) {
   event.preventDefault();
   let isUser = false;
-  setMsgType(isUser);
   if (userInfo.userEmail && userInfo.password) {
     const myUser = users.filter((el) => {
       return (
@@ -35,13 +34,13 @@ function checkUser(event, userInfo, setMsgType, setScreen) {
     });
     if (myUser.length) {
       isUser = true;
-      setMsgType(isUser);
+      setCurrentUser(myUser);
       setScreen("voting");
     } else {
       isUser = "wrong info";
-      setMsgType(isUser);
     }
   }
+  setMsgType(isUser);
   return isUser;
 }
 
