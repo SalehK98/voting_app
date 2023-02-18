@@ -2,21 +2,26 @@ import React from "react";
 import { checkUser, inputHandler } from "./login.js";
 import Button from "../../components/Button/Button";
 
-function LoginCard() {
+function LoginCard({ setMsgType, setScreen }) {
   const [userInfo, SetUserInfo] = React.useState({});
+  const [validEmail, SetValidEmail] = React.useState("hidden");
+
   return (
     <>
       <form>
         <label>
-          Username{" "}
+          Email{" "}
           <input
-            id="username"
+            id="userEmail"
             type="text"
             onInput={(event) => {
-              inputHandler(event, userInfo, SetUserInfo);
+              inputHandler(event, userInfo, SetUserInfo, SetValidEmail);
             }}
           />
         </label>
+        <p style={{ color: "#871B20", visibility: validEmail }}>
+          PLease enter a valid email address
+        </p>
         <label>
           Password{" "}
           <input
@@ -30,7 +35,7 @@ function LoginCard() {
         <Button
           text="Login"
           onClick={(event) => {
-            console.log(checkUser(event, userInfo));
+            console.log(checkUser(event, userInfo, setMsgType, setScreen));
           }}
         />
       </form>
