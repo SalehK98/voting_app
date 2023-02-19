@@ -30,7 +30,6 @@ function VotesTable() {
             <th>id</th>
             <th>name</th>
             <th>email</th>
-            <th>voted/not</th>
             <th>voted for</th>
           </tr>
         </thead>
@@ -42,8 +41,7 @@ function VotesTable() {
                 <td>{el.name}</td>
                 <td>{el.email}</td>
                 <td>{el.type}</td>
-                <td>{el.didVote ? "did vote" : "did not vote"}</td>
-                <td>{el.vote}</td>
+                <td>{el.didVote ? el.vote : "did not vote"}</td>
               </tr>
             );
           })}
