@@ -2,7 +2,7 @@ import React from "react";
 import { checkUser, inputHandler } from "./login.js";
 import Button from "../../components/Button/Button";
 
-function LoginCard({ setMsgType, setScreen, setCurrentUser }) {
+function LoginCard({ setMsgType, setScreen, setCurrentUser, setUserType }) {
   const [userInfo, SetUserInfo] = React.useState({});
   const [validEmail, SetValidEmail] = React.useState("hidden");
 
@@ -35,7 +35,14 @@ function LoginCard({ setMsgType, setScreen, setCurrentUser }) {
         <Button
           text="Login"
           onClick={(event) => {
-            checkUser(event, userInfo, setMsgType, setScreen, setCurrentUser);
+            checkUser(
+              event,
+              userInfo,
+              setMsgType,
+              setScreen,
+              setCurrentUser,
+              setUserType
+            );
           }}
         />
       </form>

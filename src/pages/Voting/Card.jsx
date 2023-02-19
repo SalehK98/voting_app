@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/Button/Button";
 import { addVote } from "./voting.js";
 
-function Card({ name, votes, setVoted, voted, setMyVote }) {
+function Card({ name, votes, setVoted, voted, setMyVote, currentUser }) {
   return (
     <div>
       <h1>{name}</h1>
@@ -11,7 +11,7 @@ function Card({ name, votes, setVoted, voted, setMyVote }) {
       <Button
         text="vote"
         onClick={() => {
-          addVote(name, setVoted, setMyVote);
+          addVote(name, setVoted, setMyVote, currentUser);
         }}
         disabled={voted}
       />

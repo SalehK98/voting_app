@@ -6,6 +6,7 @@ const users = [
     type: "admin",
     email: "Tyler-James46@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 1,
@@ -14,6 +15,7 @@ const users = [
     type: "user",
     email: "Kevan18@aol.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const users = [
     type: "user",
     email: "Aarez49@hotmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ const users = [
     type: "user",
     email: "Salahudin28@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 4,
@@ -38,6 +42,7 @@ const users = [
     type: "user",
     email: "Ceejay34@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 5,
@@ -46,6 +51,7 @@ const users = [
     type: "user",
     email: "Maisum13@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 6,
@@ -54,6 +60,7 @@ const users = [
     type: "user",
     email: "Pawel31@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 7,
@@ -62,6 +69,7 @@ const users = [
     type: "user",
     email: "Robi31@gmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 8,
@@ -70,6 +78,7 @@ const users = [
     type: "user",
     email: "Eli29@gmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 9,
@@ -78,6 +87,7 @@ const users = [
     type: "user",
     email: "Sulayman24@gmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 10,
@@ -86,6 +96,7 @@ const users = [
     type: "user",
     email: "Antoni23@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 11,
@@ -94,6 +105,7 @@ const users = [
     type: "user",
     email: "Derren28@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 12,
@@ -102,6 +114,7 @@ const users = [
     type: "user",
     email: "Derryn5@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 13,
@@ -110,6 +123,7 @@ const users = [
     type: "user",
     email: "Ryan39@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 14,
@@ -118,6 +132,7 @@ const users = [
     type: "user",
     email: "Darn14@gmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 15,
@@ -126,6 +141,7 @@ const users = [
     type: "admin",
     email: "Liam-Stephen2@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 16,
@@ -134,6 +150,7 @@ const users = [
     type: "admin",
     email: "Jordy29@gmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 17,
@@ -142,6 +159,7 @@ const users = [
     type: "user",
     email: "Raheem21@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 18,
@@ -150,6 +168,7 @@ const users = [
     type: "user",
     email: "Lewis3@aol.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 19,
@@ -158,6 +177,7 @@ const users = [
     type: "user",
     email: "Aref27@aol.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 20,
@@ -166,6 +186,7 @@ const users = [
     type: "user",
     email: "Brayden38@hotmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 21,
@@ -174,6 +195,7 @@ const users = [
     type: "user",
     email: "Arjuna7@aol.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 22,
@@ -182,6 +204,7 @@ const users = [
     type: "admin",
     email: "Warren17@gmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 23,
@@ -190,6 +213,7 @@ const users = [
     type: "user",
     email: "Konrad6@hotmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 24,
@@ -198,6 +222,7 @@ const users = [
     type: "user",
     email: "Rihards21@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 25,
@@ -206,6 +231,7 @@ const users = [
     type: "user",
     email: "Alisdair46@walla.co.il",
     didVote: false,
+    vote: "",
   },
   {
     id: 26,
@@ -214,6 +240,7 @@ const users = [
     type: "user",
     email: "Sam30@yahoo.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 27,
@@ -222,6 +249,7 @@ const users = [
     type: "user",
     email: "Maciej24@hotmail.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 28,
@@ -230,6 +258,7 @@ const users = [
     type: "user",
     email: "Umut9@aol.com",
     didVote: false,
+    vote: "",
   },
   {
     id: 29,
@@ -238,6 +267,7 @@ const users = [
     type: "admin",
     email: "Tomas19@aol.com",
     didVote: false,
+    vote: "",
   },
 ];
 

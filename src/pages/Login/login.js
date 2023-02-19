@@ -1,4 +1,5 @@
 import users from "../../data/users.js";
+import { setType } from "../../utilities/utilities.js";
 
 function inputHandler(event, userInfo, SetUserInfo, SetValidEmail = false) {
   if (event.target.id === "userEmail") {
@@ -23,7 +24,14 @@ function inputHandler(event, userInfo, SetUserInfo, SetValidEmail = false) {
   }
 }
 
-function checkUser(event, userInfo, setMsgType, setScreen, setCurrentUser) {
+function checkUser(
+  event,
+  userInfo,
+  setMsgType,
+  setScreen,
+  setCurrentUser,
+  setUserType
+) {
   event.preventDefault();
   let isUser = false;
   if (userInfo.userEmail && userInfo.password) {
@@ -35,6 +43,7 @@ function checkUser(event, userInfo, setMsgType, setScreen, setCurrentUser) {
     if (myUser.length) {
       isUser = true;
       setCurrentUser(myUser);
+      setType(setUserType, myUser);
       setScreen("voting");
     } else {
       isUser = "wrong info";
