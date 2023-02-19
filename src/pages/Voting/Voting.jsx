@@ -59,6 +59,14 @@ function Voting({ setScreen, currentUser, setCurrentUser, setUserType }) {
         ) : (
           <>{console.log("check voted", voted)}</>
         )}
+        <Button
+          text="Log out"
+          onClick={() => {
+            setScreen("login");
+            setUserType("");
+            setCurrentUser({});
+          }}
+        />
       </div>
     );
   }

@@ -22,7 +22,6 @@ function App() {
               />
             );
           case "voting":
-            console.log("i have arrived");
             if (userType === "admin") {
               return (
                 <AdminPage
@@ -30,6 +29,7 @@ function App() {
                   currentUser={currentUser}
                   setCurrentUser={setCurrentUser}
                   setUserType={setUserType}
+                  screen={screen}
                 />
               );
             } else if (userType === "user") {
@@ -45,14 +45,28 @@ function App() {
               return <></>;
             }
           case "voted":
-            return (
-              <Thank
-                setScreen={setScreen}
-                currentUser={currentUser}
-                setCurrentUser={setCurrentUser}
-                setUserType={setUserType}
-              />
-            );
+            if (userType === "admin") {
+              return (
+                <AdminPage
+                  setScreen={setScreen}
+                  currentUser={currentUser}
+                  setCurrentUser={setCurrentUser}
+                  setUserType={setUserType}
+                  screen={screen}
+                />
+              );
+            } else if (userType === "user") {
+              return (
+                <Thank
+                  setScreen={setScreen}
+                  currentUser={currentUser}
+                  setCurrentUser={setCurrentUser}
+                  setUserType={setUserType}
+                />
+              );
+            } else {
+              return <></>;
+            }
 
           default:
             <Login
